@@ -1,0 +1,151 @@
+code_insee,nom,population,departement,site_annuaire,site_repond,statut_accueil,erreur,liens_actes_accueil,page_actes_url,page_actes_statut,pdf_sur_page_actes,liens_actes_sur_page,verdict,horodatage,tranche
+14646,Saint-Pierre-Canivet,462,14,https://www.saintpierrecanivet.fr/,True,200,,2,https://www.saintpierrecanivet.fr/le-conseil-municipal/,200,0,2,page_actes_sans_pdf_direct,2026-09-09T17:30:41+00:00,moins de 500
+10293,Poivres,154,10,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:30:48+00:00,moins de 500
+25333,Laviron,356,25,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:30:48+00:00,moins de 500
+88452,Senonges,131,88,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:30:48+00:00,moins de 500
+21178,Valforêt,331,21,https://www.mairie-valforet.fr/,True,200,,3,https://www.mairie-valforet.fr/deliberations-du-conseil-municipal,200,0,3,page_actes_sans_pdf_direct,2026-09-09T17:30:48+00:00,moins de 500
+71563,Vaux-en-Pré,79,71,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:30:53+00:00,moins de 500
+02474,Mennessis,419,02,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:30:53+00:00,moins de 500
+48071,Grandvals,61,48,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:30:53+00:00,moins de 500
+01319,Relevant,465,01,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:30:53+00:00,moins de 500
+37041,Bueil-en-Touraine,323,37,https://www.bueilentouraine.com/,False,403,HTTP 403,0,,,0,0,site_injoignable,2026-09-09T17:30:53+00:00,moins de 500
+71514,Sens-sur-Seille,436,71,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:30:56+00:00,moins de 500
+60585,Saint-Martin-aux-Bois,263,60,https://www.saintmartinauxbois.fr/,True,200,,1,https://www.saintmartinauxbois.fr/arretes/,200,16,1,actes_publies_en_pdf,2026-09-09T17:30:56+00:00,moins de 500
+70115,Cerre-lès-Noroy,238,70,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:03+00:00,moins de 500
+2B328,Tox,96,2B,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:03+00:00,moins de 500
+25236,Fertans,319,25,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:03+00:00,moins de 500
+47212,Poussignac,309,47,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:03+00:00,moins de 500
+57627,Sanry-sur-Nied,426,57,https://sanrysurnied.fr,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:31:03+00:00,moins de 500
+65381,Sabarros,33,65,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:06+00:00,moins de 500
+2B337,Valle-di-Rostino,167,2B,http://www.valledirostino.com,True,200,,3,http://valledirostino.com/les-deliberations-du-cm/,200,61,3,actes_publies_en_pdf,2026-09-09T17:31:06+00:00,moins de 500
+02590,Pargny-la-Dhuys,174,02,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:11+00:00,moins de 500
+79085,Chérigné,134,79,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:11+00:00,moins de 500
+67068,Buswiller,281,67,https://buswiller.hanau-lapetitepierre.alsace/,True,200,,1,https://www.hanau-lapetitepierre.alsace/la-communaute-de-communes/publications/deliberations/,200,0,16,page_actes_sans_pdf_direct,2026-09-09T17:31:11+00:00,moins de 500
+36157,La Pérouille,427,36,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:23+00:00,moins de 500
+57577,Reyersviller,380,57,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:23+00:00,moins de 500
+80180,Cavillon,90,80,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:23+00:00,moins de 500
+38356,Saint-André-en-Royans,342,38,https://saint-andre-en-royans.fr,True,200,,1,https://saint-andre-en-royans.fr/conseil-municipal.html,200,0,2,page_actes_sans_pdf_direct,2026-09-09T17:31:23+00:00,moins de 500
+71539,Tintry,80,71,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:29+00:00,moins de 500
+88175,Fontenay,469,88,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:29+00:00,moins de 500
+76538,Rosay,258,76,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:29+00:00,moins de 500
+30213,Revens,37,30,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:31:29+00:00,moins de 500
+80621,Hypercourt,679,80,https://www.hypercourt.fr/,True,200,,2,https://www.hypercourt.fr/conseil-municipal/,200,0,3,page_actes_sans_pdf_direct,2026-09-09T17:31:29+00:00,500 a 3499
+72305,Saint-Ouen-de-Mimbré,901,72,https://mairiedesaintouendemimbre.sitew.fr/,False,0,URLError: <urlopen error timed out>,0,,,0,0,site_injoignable,2026-09-09T17:31:38+00:00,500 a 3499
+30290,Saint-Paulet-de-Caisson,1887,30,https://www.saintpauletdecaisson.fr/,True,200,,3,https://www.saintpauletdecaisson.fr/index.php/default?idpage=76&afficheMenuContextuel=true,200,0,4,page_actes_sans_pdf_direct,2026-09-09T17:34:15+00:00,500 a 3499
+09224,Pailhès,511,09,https://pailhes.fr/,True,200,,1,https://pailhes.fr/commune/le-conseil-municipal/,200,64,1,actes_publies_en_pdf,2026-09-09T17:34:22+00:00,500 a 3499
+24540,Sorges et Ligueux en Périgord,1650,24,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:34:31+00:00,500 a 3499
+09119,Eycheil,522,09,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:34:31+00:00,500 a 3499
+56110,Lignol,861,56,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:34:31+00:00,500 a 3499
+37237,Saint-Roch,1342,37,https://www.saint-roch.fr/,True,200,,2,https://www.saint-roch.fr/conseils-municipaux/,200,0,0,page_actes_vide,2026-09-09T17:34:31+00:00,500 a 3499
+68041,Blodelsheim,1971,68,https://www.blodelsheim.fr/,True,200,,5,https://www.blodelsheim.fr/commune/le-conseil-municipal,200,0,5,page_actes_sans_pdf_direct,2026-09-09T17:34:36+00:00,500 a 3499
+68381,Wuenheim,768,68,https://www.mairie-wuenheim.fr,True,200,,2,https://www.mairie-wuenheim.fr/page/conseil-municipal,200,0,0,page_actes_vide,2026-09-09T17:34:41+00:00,500 a 3499
+63258,Olliergues,736,63,https://www.olliergues.fr/,False,,,0,,,0,0,robots_interdit,2026-09-09T17:34:46+00:00,500 a 3499
+58302,Varennes-lès-Narcy,901,58,https://varennes-les-narcy.fr/,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:34:47+00:00,500 a 3499
+86198,Pouillé,735,86,https://www.commune-de-pouille.fr,False,0,URLError: <urlopen error [Errno -2] Name or service not known>,0,,,0,0,site_injoignable,2026-09-09T17:34:51+00:00,500 a 3499
+95456,Noisy-sur-Oise,549,95,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:34:52+00:00,500 a 3499
+81277,Saussenac,632,81,,False,,,0,,,0,0,pas_de_site_dans_annuaire,2026-09-09T17:34:52+00:00,500 a 3499
+01299,Le Plantay,559,01,https://leplantay.wordpress.com/,True,200,,1,https://leplantay.wordpress.com/la-mairie/les-commissions-du-conseil-municipal/,200,0,3,page_actes_sans_pdf_direct,2026-09-09T17:34:52+00:00,500 a 3499
+05148,Saint-Laurent-du-Cros,580,05,https://mairiestlaurentducros.fr,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:34:55+00:00,500 a 3499
+87164,Saint-Martin-de-Jussac,571,87,https://www.st-martin-de-jussac.fr/,True,200,,1,https://www.st-martin-de-jussac.fr/?page_id=2490,200,0,1,page_actes_sans_pdf_direct,2026-09-09T17:35:00+00:00,500 a 3499
+77383,Rampillon,836,77,https://rampillon.fr/,True,200,,1,https://rampillon.fr/votre-mairie/vie-municipale/conseil-municipal/,0,0,0,page_actes_injoignable,2026-09-09T17:35:06+00:00,500 a 3499
+19066,Cublac,1728,19,https://www.cublac.correze.net/,True,200,,1,https://www.cublac.correze.net/mairie/conseil-municipal/,200,3,2,actes_publies_en_pdf,2026-09-09T17:35:41+00:00,500 a 3499
+14475,Val d'Arry,2496,14,https://www.valdarry.fr,True,200,,5,https://www.valdarry.fr/pages/vie-municipale/conseil-municipal.html,200,0,5,page_actes_sans_pdf_direct,2026-09-09T17:35:52+00:00,500 a 3499
+86120,Lathus-Saint-Rémy,1214,86,https://www.lathus-saint-remy.fr/,True,200,,1,https://lathus-saint-remy.fr/votre-mairie/le-conseil-municipal/,200,0,2,page_actes_sans_pdf_direct,2026-09-09T17:35:59+00:00,500 a 3499
+04121,Mézel,611,04,https://mezel04.fr/,True,200,,1,https://mezel04.fr/la-mairie/proces-verbaux-des-cm/,200,0,1,page_actes_sans_pdf_direct,2026-09-09T17:36:07+00:00,500 a 3499
+25318,Jougne,1937,25,https://www.mairiedejougne.fr/,True,200,,2,https://www.mairiedejougne.fr/la-commune/compte-rendu-du-conseil-municipales/,200,34,31,actes_publies_en_pdf,2026-09-09T17:36:12+00:00,500 a 3499
+18100,Genouilly,657,18,https://www.genouilly.fr/,True,200,,1,https://www.genouilly.fr/le-conseil-municipal/,200,0,1,page_actes_sans_pdf_direct,2026-09-09T17:36:19+00:00,500 a 3499
+59485,Quiévy,1803,59,https://www.mairie-quievy.fr/,False,,,0,,,0,0,robots_interdit,2026-09-09T17:36:25+00:00,500 a 3499
+57665,Tenteling,1043,57,https://www.tenteling.fr,True,200,,1,https://www.tenteling.fr/conseil-municipal,200,0,1,page_actes_sans_pdf_direct,2026-09-09T17:36:27+00:00,500 a 3499
+17098,Chenac-Saint-Seurin-d'Uzet,606,17,http://www.chenacsaintseurinduzet.fr,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:36:31+00:00,500 a 3499
+53161,Montsûrs,3192,53,https://www.montsurs.fr,True,200,,1,https://www.montsurs.fr/ma-ville/vie-municipale/comptes-rendus-de-conseil,200,0,74,page_actes_sans_pdf_direct,2026-09-09T17:36:34+00:00,500 a 3499
+89119,Coulanges-sur-Yonne,518,89,https://www.coulanges-sur-yonne.fr/,True,200,,5,https://www.coulanges-sur-yonne.fr/conseil-municipal,200,2,2,actes_publies_en_pdf,2026-09-09T17:36:37+00:00,500 a 3499
+97613,M'Tsangamouji,6432,976,https://www.mairiedemtsangamouji.fr/,False,0,URLError: <urlopen error [Errno -2] Name or service not known>,0,,,0,0,site_injoignable,2026-09-09T17:36:43+00:00,3500 a 9999
+66189,Saleilles,5698,66,https://www.saleilles.fr,True,200,,4,https://www.saleilles.fr/mairie/le-cmj/,200,4,1,actes_publies_en_pdf,2026-09-09T17:36:44+00:00,3500 a 9999
+87048,Condat-sur-Vienne,5281,87,https://www.condatsurvienne.fr/,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:36:54+00:00,3500 a 9999
+17264,Nieul-sur-Mer,5811,17,https://www.nieul-sur-mer.fr,True,200,,5,https://www.nieul-sur-mer.fr/conseil-municipal/,200,0,5,page_actes_sans_pdf_direct,2026-09-09T17:37:01+00:00,3500 a 9999
+29003,Audierne,3727,29,https://www.audierne.bzh/,True,200,,1,https://www.audierne.bzh/transitions/publications-arretes-deliberations-du-conseil-municipal/,200,0,5,page_actes_sans_pdf_direct,2026-09-09T17:37:07+00:00,3500 a 9999
+44130,Pont-Saint-Martin,7093,44,http://www.mairie-pontsaintmartin.fr,False,0,URLError: <urlopen error [Errno 111] Connection refused>,0,,,0,0,site_injoignable,2026-09-09T17:37:16+00:00,3500 a 9999
+59431,Nieppe,7764,59,http://www.nieppe.fr,False,,,0,,,0,0,robots_interdit,2026-09-09T17:37:18+00:00,3500 a 9999
+56119,Locoal-Mendon,3530,56,https://www.locoal-mendon.fr/,True,200,,3,https://www.locoal-mendon.bzh/wp-content/uploads/2025/12/TARIFS-2026-pour-deliberation.pdf,200,0,0,page_actes_vide,2026-09-09T17:37:18+00:00,3500 a 9999
+62528,Loos-en-Gohelle,6799,62,https://www.loos-en-gohelle.fr,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:37:29+00:00,3500 a 9999
+40197,Morcenx-la-Nouvelle,5022,40,https://morcenxlanouvelle.fr/,False,0,URLError: <urlopen error timed out>,0,,,0,0,site_injoignable,2026-09-09T17:37:32+00:00,3500 a 9999
+77085,Chanteloup-en-Brie,4130,77,https://www.chanteloupenbrie.fr/,True,200,,2,https://chanteloup-en-brie.kiosk.qualigraf.fr/app/,,0,0,page_actes_robots_interdit,2026-09-09T17:40:07+00:00,3500 a 9999
+37018,Ballan-Miré,8477,37,https://www.mairie-ballan-mire.fr/,True,200,,1,https://www.mairie-ballan-mire.fr/ma-mairie/actes-administratifs/,200,0,1,page_actes_sans_pdf_direct,2026-09-09T17:40:16+00:00,3500 a 9999
+54099,Val de Briey,8130,54,https://www.valdebriey.fr/,True,200,,7,https://www.valdebriey.fr/ma-mairie/compte-rendus/,200,84,86,actes_publies_en_pdf,2026-09-09T17:40:23+00:00,3500 a 9999
+91249,Forges-les-Bains,4241,91,https://www.forges-les-bains.fr/,True,200,,2,https://www.forges-les-bains.fr/conseils-municipaux/,200,0,7,page_actes_sans_pdf_direct,2026-09-09T17:40:32+00:00,3500 a 9999
+97403,Entre-Deux,7176,974,https://entredeux.re/,False,,,0,,,0,0,robots_interdit,2026-09-09T17:40:39+00:00,3500 a 9999
+42302,Sorbiers,8116,42,https://www.mairie-sorbiers.fr/,True,200,,3,https://www.mairie-sorbiers.fr/ma-ville/vie-municipale/actes-administratifs/,200,52,7,actes_publies_en_pdf,2026-09-09T17:40:40+00:00,3500 a 9999
+59153,Condé-sur-l'Escaut,9253,59,https://www.condesurlescaut.fr/,True,200,,4,https://condesurlescaut.fr/le-conseil-municipal-en-video,200,1,4,actes_publies_en_pdf,2026-09-09T17:40:47+00:00,3500 a 9999
+44188,Saint-Philbert-de-Grand-Lieu,9400,44,https://www.stphilbert.fr/,False,0,URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>,0,,,0,0,site_injoignable,2026-09-09T17:40:54+00:00,3500 a 9999
+83143,Le Val,4335,83,https://www.mairie-leval.fr/,False,,,0,,,0,0,robots_interdit,2026-09-09T17:41:00+00:00,3500 a 9999
+44041,La Chevrolière,6539,44,http://www.mairie-lachevroliere.com,True,200,,7,https://www.mairie-lachevroliere.com/agenda/conseil-municipal/,200,0,6,page_actes_sans_pdf_direct,2026-09-09T17:41:01+00:00,3500 a 9999
+53034,Bonchamp-lès-Laval,6302,53,https://www.bonchamp.fr/,False,0,URLError: <urlopen error timed out>,0,,,0,0,site_injoignable,2026-09-09T17:41:07+00:00,3500 a 9999
+67073,Châtenois,4294,67,https://www.mairie-chatenois.fr/,True,200,,1,https://www.mairie-chatenois.fr/documents_administratifs,200,10,0,actes_publies_en_pdf,2026-09-09T17:43:44+00:00,3500 a 9999
+47032,Bon-Encontre,6530,47,https://www.ville-bon-encontre.fr,True,200,,2,https://www.ville-bon-encontre.fr/vie-municipale/conseil-municipal,200,725,73,actes_publies_en_pdf,2026-09-09T17:43:49+00:00,3500 a 9999
+40296,Seignosse,4056,40,https://www.seignosse.fr,True,200,,2,https://www.seignosse.fr/vie-municipale/conseil-municipal,200,0,2,page_actes_sans_pdf_direct,2026-09-09T17:43:59+00:00,3500 a 9999
+31182,Fenouillet,5784,31,http://www.fenouillet.fr,True,200,,3,https://www.fenouillet.fr/cme/,200,0,2,page_actes_sans_pdf_direct,2026-09-09T17:44:04+00:00,3500 a 9999
+89464,Villeneuve-sur-Yonne,5135,89,https://www.villeneuve-yonne.fr/,True,200,,1,https://www.villeneuve-yonne.fr/les-elus-du-conseil-municipal-before-import/,200,0,1,page_actes_sans_pdf_direct,2026-09-09T17:44:15+00:00,3500 a 9999
+02095,Bohain-en-Vermandois,5605,02,https://www.bohainenvermandois.fr/?lang=fr,True,200,,3,https://bohainenvermandois.fr/proces-verbal/,200,0,4,page_actes_sans_pdf_direct,2026-09-09T17:44:23+00:00,3500 a 9999
+69133,Millery,4299,69,https://mairie-millery.fr/,True,200,,5,https://mairie-millery.fr/category/ma-ville/conseil-municipal-ma-ville/registre-des-arretes-decisions-et-deliberations/,200,0,5,page_actes_sans_pdf_direct,2026-09-09T17:44:32+00:00,3500 a 9999
+86177,Neuville-de-Poitou,5513,86,https://www.neuville-de-poitou.com/,False,,,0,,,0,0,robots_interdit,2026-09-09T17:44:43+00:00,3500 a 9999
+34151,Marsillargues,6988,34,https://marsillargues.fr/,False,0,TimeoutError: The read operation timed out,0,,,0,0,site_injoignable,2026-09-09T17:44:44+00:00,3500 a 9999
+83118,Saint-Raphaël,37113,83,https://www.ville-saintraphael.fr/,False,,,0,,,0,0,robots_interdit,2026-09-09T17:45:06+00:00,10000 a 49999
+95572,Saint-Ouen-l'Aumône,25578,95,https://www.ville-soa.fr/fr,False,,,0,,,0,0,robots_interdit,2026-09-09T17:45:07+00:00,10000 a 49999
+93013,Le Bourget,15925,93,http://www.le-bourget.fr,False,0,ConnectionResetError: [Errno 104] Connection reset by peer,0,,,0,0,site_injoignable,2026-09-09T17:45:08+00:00,10000 a 49999
+84003,Apt,10143,84,https://www.apt.fr/,True,200,,14,https://www.apt.fr/le-conseil-municipal/,200,3,16,actes_publies_en_pdf,2026-09-09T17:45:10+00:00,10000 a 49999
+91272,Gif-sur-Yvette,22544,91,https://www.ville-gif.fr/,True,200,,2,https://www.ville-gif.fr/109/vie-municipale/conseil-municipal.htm,200,0,8,page_actes_sans_pdf_direct,2026-09-09T17:45:18+00:00,10000 a 49999
+53062,Château-Gontier-sur-Mayenne,16584,53,https://www.chateaugontiersurmayenne.fr/,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:45:28+00:00,10000 a 49999
+95277,Gonesse,27707,95,https://www.ville-gonesse.fr/,True,200,,1,https://www.ville-gonesse.fr/ma-ville/conseils-municipal/,200,0,2,page_actes_sans_pdf_direct,2026-09-09T17:45:31+00:00,10000 a 49999
+97360,Apatou,10306,973,https://ville-apatou.fr/,True,200,,2,https://ville-apatou.fr/comptes-rendus/,200,29,3,actes_publies_en_pdf,2026-09-09T17:45:38+00:00,10000 a 49999
+95488,Pierrelaye,10130,95,http://www.villepierrelaye.fr,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:45:43+00:00,10000 a 49999
+02408,Laon,24220,02,https://laon.fr/,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:45:49+00:00,10000 a 49999
+83098,Le Pradet,10933,83,https://www.le-pradet.fr/,True,200,,2,https://www.le-pradet.fr/votre-mairie/le-conseil-municipal-des-enfants/,200,0,4,page_actes_sans_pdf_direct,2026-09-09T17:45:52+00:00,10000 a 49999
+59299,Hem,18582,59,https://www.ville-hem.fr,True,200,,9,https://www.lillemetropole.fr/deliberations,200,10,15,actes_publies_en_pdf,2026-09-09T17:45:58+00:00,10000 a 49999
+59421,Mouvaux,13369,59,https://www.mouvaux.fr/,False,0,URLError: <urlopen error [Errno 101] Network is unreachable>,0,,,0,0,site_injoignable,2026-09-09T17:46:09+00:00,10000 a 49999
+42279,Saint-Just-Saint-Rambert,15764,42,https://www.stjust-strambert.fr/,True,200,,9,https://www.stjust-strambert.fr/ma-ville/la-mairie/arretes-et-deliberations/,200,243,11,actes_publies_en_pdf,2026-09-09T17:48:43+00:00,10000 a 49999
+78311,Houilles,33983,78,https://www.ville-houilles.fr,False,403,HTTP 403,0,,,0,0,site_injoignable,2026-09-09T17:48:50+00:00,10000 a 49999
+69273,Corbas,11315,69,https://corbas.fr/,True,200,,8,https://corbas.fr/liste-des-decisions-et-deliberations/,200,1,10,actes_publies_en_pdf,2026-09-09T17:48:52+00:00,10000 a 49999
+69089,Francheville,15604,69,http://www.mairie-francheville69.fr,True,200,,4,https://www.mairie-francheville69.fr/articles/vie-quotidienne-vivre-ensemble/seniors/deliberations/,200,68,77,actes_publies_en_pdf,2026-09-09T17:49:21+00:00,10000 a 49999
+13106,Septèmes-les-Vallons,11995,13,http://www.ville-septemes.fr,True,200,,3,https://ville-septemes.fr/le-conseil-municipal/,200,711,78,actes_publies_en_pdf,2026-09-09T17:49:29+00:00,10000 a 49999
+11076,Castelnaudary,12151,11,https://www.ville-castelnaudary.fr,True,200,,5,https://ville-castelnaudary.fr/fr/raccourcies-acces-rapide/deliberations-du-conseil,200,0,125,page_actes_sans_pdf_direct,2026-09-09T17:49:38+00:00,10000 a 49999
+62516,Lillers,10193,62,http://www.mairie-lillers.fr,True,200,,3,https://lillers.fr/conseil-municipal/,200,18,14,actes_publies_en_pdf,2026-09-09T17:49:50+00:00,10000 a 49999
+67462,Sélestat,19589,67,https://www.selestat.fr/,True,200,,4,https://www.selestat.fr/ma-ville/le-conseil-municipal/publication-des-actes,200,0,9,page_actes_sans_pdf_direct,2026-09-09T17:50:02+00:00,10000 a 49999
+33529,La Teste-de-Buch,27566,33,http://www.latestedebuch.fr,True,200,,4,https://www.latestedebuch.fr/conseil-municipal/,200,0,6,page_actes_sans_pdf_direct,2026-09-09T17:50:09+00:00,10000 a 49999
+44129,Pontchâteau,11474,44,https://www.pontchateau.fr,True,200,,2,https://www.pontchateau.fr/listes/conseil-municipal/,200,0,9,page_actes_sans_pdf_direct,2026-09-09T17:50:16+00:00,10000 a 49999
+25462,Pontarlier,18067,25,https://www.ville-pontarlier.fr/,True,200,,1,https://www.ville-pontarlier.fr/page/votre-mairie/vie-de-la-mairie/conseil-municipal,200,0,12,page_actes_sans_pdf_direct,2026-09-09T17:50:23+00:00,10000 a 49999
+78545,Saint-Cyr-l'École,21268,78,https://www.saintcyr78.fr/mon-quotidien/etat-civil/actes-detat-civil/,True,200,,6,https://www.saintcyr78.fr/ma-mairie/le-conseil-municipal-2/deliberations-decisions-du-maire/,200,0,14,page_actes_sans_pdf_direct,2026-09-09T17:50:29+00:00,10000 a 49999
+34154,Mauguio,16522,34,https://mauguio-carnon.com/,True,200,,1,https://mauguio-carnon.com/ma-ville/municipalite/actes-administratifs/,200,30,6,actes_publies_en_pdf,2026-09-09T17:50:35+00:00,10000 a 49999
+36088,Issoudun,11159,36,https://www.issoudun.fr/,True,200,,2,https://www.issoudun.fr/comptes-rendus-des-conseils/,200,174,57,actes_publies_en_pdf,2026-09-09T17:50:41+00:00,10000 a 49999
+44047,Couëron,24103,44,https://www.ville-coueron.fr,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:50:47+00:00,10000 a 49999
+76476,Port-Jérôme-sur-Seine,10617,76,http://www.pj2s.fr,True,200,,4,https://pj2s.fr/decouvrir-la-ville/le-conseil-municipal/,200,0,4,page_actes_sans_pdf_direct,2026-09-09T17:50:54+00:00,10000 a 49999
+22050,Dinan,14764,22,https://www.dinan.fr/,True,200,,2,https://www.dinan.fr/ma-mairie/vie-municipale/dinan-documents-officiels-deliberations/,200,15,8,actes_publies_en_pdf,2026-09-09T17:51:02+00:00,10000 a 49999
+57463,Metz,122572,57,https://metz.fr/,True,200,,1,https://metz.fr/projets/conseil_municipal/,200,0,6,page_actes_sans_pdf_direct,2026-09-09T17:51:09+00:00,50000 et plus
+92026,Courbevoie,82902,92,https://www.ville-courbevoie.fr/32/services-en-ligne.htm,True,200,,8,https://www.ville-courbevoie.fr/51/votre-mairie/conseil-municipal.htm,200,0,15,page_actes_sans_pdf_direct,2026-09-09T17:51:14+00:00,50000 et plus
+62193,Calais,67571,62,https://www.calais.fr/fr/,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:51:20+00:00,50000 et plus
+95585,Sarcelles,59173,95,https://www.sarcelles.fr/,True,200,,2,https://www.sarcelles.fr/sarcelles-citoyenne-apprenante/vie-municipale/conseil-municipal/,200,0,17,page_actes_sans_pdf_direct,2026-09-09T17:51:24+00:00,50000 et plus
+44184,Saint-Nazaire,74568,44,https://www.saintnazaire.fr/,True,200,,1,https://www.saintnazaire.fr/ma-ville/le-conseil-municipal/,200,0,6,page_actes_sans_pdf_direct,2026-09-09T17:51:32+00:00,50000 et plus
+97311,Saint-Laurent-du-Maroni,54429,973,https://www.saintlaurentdumaroni.fr/,False,,,0,,,0,0,robots_interdit,2026-09-09T17:51:40+00:00,50000 et plus
+51454,Reims,177674,51,https://www.reims.fr/la-ville-de-reims/demarches-administratives,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:51:40+00:00,50000 et plus
+63113,Clermont-Ferrand,146351,63,https://clermont-ferrand.fr/,False,0,URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>,0,,,0,0,site_injoignable,2026-09-09T17:51:43+00:00,50000 et plus
+66136,Perpignan,121616,66,https://www.mairie-perpignan.fr/demarches/etat-civil/demande-dactes-detat-civil,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:51:45+00:00,50000 et plus
+93070,Saint-Ouen-sur-Seine,53615,93,https://www.saint-ouen.fr/,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:51:49+00:00,50000 et plus
+94068,Saint-Maur-des-Fossés,76572,94,https://www.saint-maur.com/,True,200,,5,https://www.saint-maur.com/ma-mairie/les-elus-du-conseil-municipal,200,0,5,page_actes_sans_pdf_direct,2026-09-09T17:51:51+00:00,50000 et plus
+93051,Noisy-le-Grand,72978,93,https://www.noisylegrand.fr/,False,,,0,,,0,0,robots_interdit,2026-09-09T17:51:58+00:00,50000 et plus
+72181,Le Mans,146249,72,https://www.lemans.fr/,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:51:59+00:00,50000 et plus
+92051,Neuilly-sur-Seine,59538,92,https://www.neuillysurseine.fr/demande-acte-etat-civil-en-ligne,True,200,,1,https://www.neuillysurseine.fr/tunnel/le-conseil-municipal,200,0,2,page_actes_sans_pdf_direct,2026-09-09T17:52:02+00:00,50000 et plus
+92004,Asnières-sur-Seine,93941,92,https://www.espace-citoyens.net/asnieres-sur-seine/espace-citoyens/Demande/ChoixTypeDemandeCache,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:52:07+00:00,50000 et plus
+59599,Tourcoing,98772,59,https://www.tourcoing.fr/,True,200,,5,https://www.tourcoing.fr/le-conseil-municipal/,200,0,5,page_actes_sans_pdf_direct,2026-09-09T17:52:14+00:00,50000 et plus
+97101,Les Abymes,51055,971,https://www.abymes.fr/,False,,,0,,,0,0,robots_interdit,2026-09-09T17:52:22+00:00,50000 et plus
+54395,Nancy,103671,54,https://www.nancy.fr/accessibilite/,True,200,,1,https://www.nancy.fr/vie-municipale/conseil-municipal,200,3,18,actes_publies_en_pdf,2026-09-09T17:52:22+00:00,50000 et plus
+69123,Lyon,519127,69,https://www.lyon.fr/,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:52:27+00:00,50000 et plus
+92025,Colombes,91053,92,https://www.colombes.fr,False,,,0,,,0,0,robots_interdit,2026-09-09T17:52:30+00:00,50000 et plus
+13001,Aix-en-Provence,149695,13,https://www.aixenprovence.fr,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:52:31+00:00,50000 et plus
+76540,Rouen,117662,76,https://rouen.fr/,True,200,,3,https://rouen.fr/fr/composition-cm,200,1,3,actes_publies_en_pdf,2026-09-09T17:52:34+00:00,50000 et plus
+29232,Quimper,64385,29,https://www.quimper.bzh/,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:52:39+00:00,50000 et plus
+92063,Rueil-Malmaison,82874,92,https://www.villederueil.fr/fr,False,,,0,,,0,0,robots_interdit,2026-09-09T17:52:42+00:00,50000 et plus
+59512,Roubaix,98286,59,https://www.ville-roubaix.fr/,True,200,,1,https://www.ville-roubaix.fr/municipalite,200,0,1,page_actes_sans_pdf_direct,2026-09-09T17:52:43+00:00,50000 et plus
+69266,Villeurbanne,163684,69,https://www.villeurbanne.fr/demarches/etat-civil-naissance-union-deces/demander-un-acte-de-naissance-de-mariage-de-deces,True,200,,4,http://webdelib.villeurbanne.fr/,200,0,0,page_actes_vide,2026-09-09T17:52:50+00:00,50000 et plus
+69256,Vaulx-en-Velin,53069,69,http://vaulx-en-velin.net,True,200,,1,https://vaulx-en-velin.net/decouvrir/mairie/deliberations/,200,2554,148,actes_publies_en_pdf,2026-09-09T17:52:56+00:00,50000 et plus
+49007,Angers,159022,49,https://www.angers.fr/,True,200,,0,,,0,0,aucun_lien_actes_en_page_accueil,2026-09-09T17:53:12+00:00,50000 et plus
+83061,Fréjus,59719,83,https://www.ville-frejus.fr/mairie/vie-municipale/services-municipaux/,True,200,,6,https://www.ville-frejus.fr/mairie/vie-municipale/comptes-rendus-et-proces-verbaux/,200,120,72,actes_publies_en_pdf,2026-09-09T17:53:15+00:00,50000 et plus
+26362,Valence,64458,26,https://www.valence.fr,False,,,0,,,0,0,robots_interdit,2026-09-09T17:53:24+00:00,50000 et plus

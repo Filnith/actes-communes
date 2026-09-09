@@ -1,0 +1,105 @@
+{
+ "demarre_le": "2026-09-09T17:25:49+00:00",
+ "user_agent": "ConstatBot/0.2 (+https://github.com/Filnith/actes-communes) mesure-publication-actes-communaux",
+ "graine": 20260909,
+ "par_tranche": 30,
+ "etapes": [
+  {
+   "etape": "api_geo",
+   "statut": 200,
+   "erreur": null,
+   "octets": 3519057
+  },
+  {
+   "etape": "communes_chargees",
+   "nombre": 34957
+  },
+  {
+   "etape": "dataset_annuaire",
+   "statut": 200,
+   "erreur": null
+  },
+  {
+   "etape": "ressources_annuaire",
+   "nombre": 5,
+   "titres": [
+    "Présentation de la Base de données locales",
+    "Présentation de l'API Annuaire de l'administration et des services publics ",
+    "Présentation de l'API Annuaire de l'administration : compétence géographique des services locaux",
+    "Liste du type d'organismes de la base locale de l'Annuaire de Service-public.gouv.fr",
+    "Base de données locales de Service-public.gouv.fr"
+   ]
+  },
+  {
+   "etape": "archive_retenue",
+   "titre": "Base de données locales de Service-public.gouv.fr",
+   "url": "https://lecomarquage.service-public.gouv.fr/donnees_locales_v4/all_latest.tar.bz2"
+  },
+  {
+   "etape": "archive_telechargee",
+   "octets": 365213619
+  },
+  {
+   "etape": "archive_lue",
+   "fichiers": 2,
+   "json": 1,
+   "enregistrements": 85857,
+   "mairies": 35797,
+   "communes_avec_site": 22113,
+   "exemples_membres": [
+    "./2026-09-09_050040-data.gouv_commune.zip",
+    "./2026-09-09_053121-data.gouv_local.json"
+   ],
+   "cles_frequentes": [
+    "plage_ouverture",
+    "site_internet",
+    "copyright",
+    "siren",
+    "ancien_code_pivot",
+    "reseau_social",
+    "texte_reference",
+    "partenaire",
+    "telecopie",
+    "nom",
+    "siret",
+    "itm_identifiant"
+   ]
+  },
+  {
+   "etape": "tranche",
+   "nom": "moins de 500",
+   "tirees": 30,
+   "disponibles": 18258
+  },
+  {
+   "etape": "tranche",
+   "nom": "500 a 3499",
+   "tirees": 30,
+   "disponibles": 13409
+  },
+  {
+   "etape": "tranche",
+   "nom": "3500 a 9999",
+   "tirees": 30,
+   "disponibles": 2223
+  },
+  {
+   "etape": "tranche",
+   "nom": "10000 a 49999",
+   "tirees": 30,
+   "disponibles": 932
+  },
+  {
+   "etape": "tranche",
+   "nom": "50000 et plus",
+   "tirees": 30,
+   "disponibles": 135
+  },
+  {
+   "etape": "fiches_ecrites",
+   "nombre": 150
+  }
+ ],
+ "echec": null,
+ "fini_le": "2026-09-09T17:53:25+00:00"
+}
