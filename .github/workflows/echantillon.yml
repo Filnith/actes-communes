@@ -8,6 +8,14 @@ name: Echantillon — publication des actes communaux
 # son seul canal de retour. Un échec muet serait un échec deux fois.
 
 on:
+  # Une exécution par semaine, sans personne devant. Son but à ce stade n'est
+  # pas de récolter du neuf — l'échantillon est fixe — mais de détecter la
+  # pourriture silencieuse : une source qui déménage, une API qui change, un
+  # format qui dérive. Un pipeline qui rouille sans prévenir est la panne la
+  # plus coûteuse, parce qu'on la découvre trop tard.
+  schedule:
+    - cron: "17 4 * * 1"
+
   workflow_dispatch:
     inputs:
       par_tranche:

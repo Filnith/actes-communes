@@ -1,0 +1,59 @@
+name: Sonde PDF — les actes sont-ils du texte ou des images ?
+
+# Repart des communes où l'échantillon a trouvé des PDF, et mesure la
+# quantité de texte réellement extractible. C'est la contrainte bloquante
+# suivante : un corpus d'images scannées n'est pas un corpus de données.
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_pdf:
+        description: "Nombre maximum de PDF analysés"
+        default: "80"
+      par_commune:
+        description: "PDF analysés par commune"
+        default: "3"
+
+permissions:
+  contents: write
+
+jobs:
+  sonder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer poppler
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+
+      - name: Sonder les PDF
+        id: sonde
+        continue-on-error: true
+        env:
+          CONSTAT_MAX_PDF: ${{ inputs.max_pdf }}
+          CONSTAT_PDF_PAR_COMMUNE: ${{ inputs.par_commune }}
+          CONSTAT_CONTACT: https://github.com/${{ github.repository }}
+        run: python3 src/pdf_sonde.py
+
+      - name: Publier les résultats et le diagnostic
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data RESULTATS_PDF.md 2>/dev/null || git add -A data
+          if git diff --staged --quiet; then
+            echo "Rien à publier."
+          else
+            git commit -m "Sonde PDF du $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi
+
+      - name: Refléter l'échec
+        if: steps.sonde.outcome == 'failure'
+        run: echo "Voir data/pdf_diagnostic.json" && exit 1
