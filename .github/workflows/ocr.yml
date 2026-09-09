@@ -1,0 +1,79 @@
+name: Moisson + OCR — l'OCR est-il assez bon ?
+
+# Deux mesures qui s'enchaînent :
+#   1. moisson.py descend à trois niveaux sur les communes de plus de
+#      3 500 habitants pour récolter de VRAIES délibérations. La mesure
+#      précédente n'en avait identifié que 21 — trop peu pour décider quoi
+#      que ce soit (intervalle de confiance de 41 à 83 %).
+#   2. ocr_qualite.py passe les scans à Tesseract et mesure si le résultat
+#      est fiable, avec les documents en texte natif comme témoin.
+#
+# Les seuils de verdict sont fixés dans le code AVANT l'exécution. C'est ce
+# qui empêche d'arrondir vers le résultat qui arrange.
+
+on:
+  workflow_dispatch:
+    inputs:
+      nb_communes:
+        description: "Communes visitées pour la moisson"
+        default: "60"
+      ocr_docs:
+        description: "Documents scannés passés à l'OCR"
+        default: "25"
+
+permissions:
+  contents: write
+
+jobs:
+  mesurer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer poppler, Tesseract français et le dictionnaire
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-fra wfrench
+          tesseract --version | head -2
+          ls -l /usr/share/dict/french || echo "dictionnaire absent"
+
+      - name: Moisson des délibérations
+        id: moisson
+        continue-on-error: true
+        env:
+          CONSTAT_NB_COMMUNES: ${{ inputs.nb_communes }}
+          CONSTAT_CONTACT: https://github.com/${{ github.repository }}
+        run: python3 src/moisson.py
+
+      - name: Qualité de l'OCR
+        id: ocr
+        continue-on-error: true
+        env:
+          CONSTAT_OCR_DOCS: ${{ inputs.ocr_docs }}
+          CONSTAT_CONTACT: https://github.com/${{ github.repository }}
+        run: python3 src/ocr_qualite.py
+
+      - name: Publier les résultats et les diagnostics
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data RESULTATS_OCR.md 2>/dev/null || git add -A data
+          if git diff --staged --quiet; then
+            echo "Rien à publier."
+          else
+            git commit -m "Moisson + OCR du $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi
+
+      - name: Refléter un échec
+        if: steps.moisson.outcome == 'failure' || steps.ocr.outcome == 'failure'
+        run: |
+          echo "Voir data/moisson_diagnostic.json et data/ocr_diagnostic.json"
+          exit 1
