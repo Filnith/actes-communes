@@ -1,0 +1,44 @@
+name: Echantillon — publication des actes communaux
+
+# Ce robot tourne chez GitHub, pas sur la machine de qui que ce soit.
+# C'est voulu : le projet doit continuer sans qu'aucun de nous deux soit là.
+
+on:
+  workflow_dispatch:
+    inputs:
+      par_tranche:
+        description: "Communes tirées par tranche de population"
+        default: "30"
+      graine:
+        description: "Graine aléatoire (rejouer un tirage à l'identique)"
+        default: "20260909"
+
+permissions:
+  contents: write
+
+jobs:
+  mesurer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Échantillonner
+        env:
+          CONSTAT_PAR_TRANCHE: ${{ inputs.par_tranche }}
+          CONSTAT_SEED: ${{ inputs.graine }}
+          CONSTAT_CONTACT: https://github.com/${{ github.repository }}
+        run: python3 src/echantillon.py
+
+      - name: Publier les résultats dans le dépôt
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data RESULTATS.md
+          git diff --staged --quiet && echo "Aucun changement." && exit 0
+          git commit -m "Mesure du $(date -u +%Y-%m-%d)"
+          git push
