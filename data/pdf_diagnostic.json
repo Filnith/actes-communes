@@ -1,0 +1,24 @@
+{
+ "demarre_le": "2026-09-09T19:39:12+00:00",
+ "seuils_caracteres_par_page": {
+  "marginal": 100,
+  "partiel": 400
+ },
+ "etapes": [
+  {
+   "etape": "outils",
+   "poppler": "present"
+  },
+  {
+   "etape": "communes_avec_pdf",
+   "nombre": 27,
+   "sur": 150
+  },
+  {
+   "etape": "pdf_analyses",
+   "nombre": 72
+  }
+ ],
+ "echec": null,
+ "fini_le": "2026-09-09T19:43:20+00:00"
+}

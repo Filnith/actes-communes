@@ -1,0 +1,73 @@
+url,octets,pages,caracteres,car_par_page,classe,erreur,commune,code_insee,population,tranche
+https://www.saintmartinauxbois.fr/wp-content/uploads/Arrete-stationnement.pdf,116163,2,268,134.0,texte_partiel,,Saint-Martin-aux-Bois,60585,263,moins de 500
+https://www.saintmartinauxbois.fr/wp-content/uploads/baignadeinterdite.pdf,72716,1,0,0.0,scan_sans_texte,,Saint-Martin-aux-Bois,60585,263,moins de 500
+https://www.saintmartinauxbois.fr/wp-content/uploads/collecte-des-dechets-menagers.pdf,2223156,12,0,0.0,scan_sans_texte,,Saint-Martin-aux-Bois,60585,263,moins de 500
+http://valledirostino.com/wp-content/uploads/2026/03/PV-CM-21032026.pdf,1982940,6,0,0.0,scan_sans_texte,,Valle-di-Rostino,2B337,167,moins de 500
+http://valledirostino.com/wp-content/uploads/2026/01/PV-CM-29112025.pdf,2548132,6,0,0.0,scan_sans_texte,,Valle-di-Rostino,2B337,167,moins de 500
+http://valledirostino.com/wp-content/uploads/2025/10/PV-CM-27092025.pdf,1450005,5,0,0.0,scan_sans_texte,,Valle-di-Rostino,2B337,167,moins de 500
+https://www.arize-leze.fr/IMG/pdf/20220708-ligne-358.pdf,243,,0,0.0,fichier_trop_petit,,Pailhès,09224,511,500 a 3499
+https://www.pailhes.fr/docs/BILAN MI MANDAT 2023.pdf,0,,0,0.0,telechargement_echoue,InvalidURL: URL can't contain control characters. '/docs/BILAN MI MANDAT 2023.pdf' (found at least ' '),Pailhès,09224,511,500 a 3499
+https://www.pailhes.fr/docs/CR CM 26-01-19.pdf,0,,0,0.0,telechargement_echoue,InvalidURL: URL can't contain control characters. '/docs/CR CM 26-01-19.pdf' (found at least ' '),Pailhès,09224,511,500 a 3499
+https://www.cublac.correze.net/data/uploads/mairie/arretes/arrete_secheresse_28_aout_2026.pdf,1571482,20,11935,596.8,texte_exploitable,,Cublac,19066,1728,500 a 3499
+https://www.cublac.correze.net/data/uploads/mairie/arretes/2026_06_09_ap_usage_du_feu_correze.pdf,9119530,28,5149,183.9,texte_partiel,,Cublac,19066,1728,500 a 3499
+https://www.cublac.correze.net/data/uploads/mairie/bulletins/bulletin-2026/journal-communal-cublac-1-er-sem-2026.pdf,16421638,40,47445,1186.1,texte_exploitable,,Cublac,19066,1728,500 a 3499
+https://www.mairiedejougne.fr/wp-content/uploads/2026/09/CM-du-03-09-2026-Deliberations-examinees-en-Conseil.pdf,1317501,2,0,0.0,scan_sans_texte,,Jougne,25318,1937,500 a 3499
+https://www.mairiedejougne.fr/wp-content/uploads/2026/09/PV-du-conseil-municipal-du-10-juillet-2026.pdf,748105,14,0,0.0,scan_sans_texte,,Jougne,25318,1937,500 a 3499
+https://www.mairiedejougne.fr/wp-content/uploads/2026/07/PV-du-conseil-municipal-du-5-juin-2026.pdf,543200,10,0,0.0,scan_sans_texte,,Jougne,25318,1937,500 a 3499
+https://www.coulanges-sur-yonne.fr/userfile/fichier-telechargement/1466155665-organigramme-24-02-2016.pdf,52996,1,2051,2051.0,texte_exploitable,,Coulanges-sur-Yonne,89119,518,500 a 3499
+https://www.coulanges-sur-yonne.fr/userfile/fichier-telechargement/1466155731-syndicats-intercommunaux-et-delegations-ext.pdf,19138,1,1437,1437.0,texte_exploitable,,Coulanges-sur-Yonne,89119,518,500 a 3499
+https://www.saleilles.fr/wp-content/uploads/2018/01/PCS.pdf,434750,12,25231,2102.6,texte_exploitable,,Saleilles,66189,5698,3500 a 9999
+https://www.saleilles.fr/wp-content/uploads/2018/02/DICRIM-REART-Saleilles_VF.pdf,5147381,11,17981,1634.6,texte_exploitable,,Saleilles,66189,5698,3500 a 9999
+https://www.valdebriey.fr/wp-content/uploads/2026/07/compte-rendu-sommaire-du-CM-du-8-juillet-2026-1.pdf,62761,1,0,0.0,scan_sans_texte,,Val de Briey,54099,8130,3500 a 9999
+https://www.valdebriey.fr/wp-content/uploads/2026/08/Proces-verbal-du-Conseil-municipal-du-10-juin-2026-1.pdf,790544,27,68606,2541.0,texte_exploitable,,Val de Briey,54099,8130,3500 a 9999
+https://www.valdebriey.fr/wp-content/uploads/2026/06/compte-rendu-sommaire-du-CM-du-29-avril-2026.pdf,63244,1,0,0.0,scan_sans_texte,,Val de Briey,54099,8130,3500 a 9999
+https://www.mairie-sorbiers.fr/wp-content/uploads/2026/07/2026-124ARR-delegation-temp.-fonction-D.-Bernat-pref.pdf,608390,2,0,0.0,scan_sans_texte,,Sorbiers,42302,8116,3500 a 9999
+https://www.mairie-sorbiers.fr/wp-content/uploads/2026/07/2026-126-ARR-delegation-temporaire-N-Saura-absence-O-Villetelle-1.pdf,838045,2,0,0.0,scan_sans_texte,,Sorbiers,42302,8116,3500 a 9999
+https://www.mairie-sorbiers.fr/wp-content/uploads/2026/07/2026-127-ARR-delegation-temporaire-D-Bernat-absence-O-Villetelle-1.pdf,839258,2,0,0.0,scan_sans_texte,,Sorbiers,42302,8116,3500 a 9999
+https://condesurlescaut.fr/sites/default/files/2025-08/calendrier-scolaire-2025-2026-119770%20%281%29.pdf,230848,1,1585,1585.0,texte_exploitable,,Condé-sur-l'Escaut,59153,9253,3500 a 9999
+https://files.appli-intramuros.com/legal_documents/9001/7d5d60402f864bb6f2b4d0f24a4ceb23.pdf,0,,0,0.0,robots_interdit,,Châtenois,67073,4294,3500 a 9999
+https://files.appli-intramuros.com/legal_documents/9001/a53645d6fe936e8ea91872e1e1908c6.pdf,0,,0,0.0,robots_interdit,,Châtenois,67073,4294,3500 a 9999
+https://files.appli-intramuros.com/legal_documents/9001/8b50401dbe104b44416edd6305fbfcc3.pdf,0,,0,0.0,robots_interdit,,Châtenois,67073,4294,3500 a 9999
+https://www.ville-bon-encontre.fr/wp-content/uploads/2024/10/BAT_Plaquette-DICRIM_2.pdf,10068428,20,24614,1230.7,texte_exploitable,,Bon-Encontre,47032,6530,3500 a 9999
+https://www.ville-bon-encontre.fr/wp-content/uploads/2026/07/AR-REGLEMENT-INTERIEUR-DU-CONSEIL-MUNICIPAL-ADOPTE-LE-1ER-JUILLET-2026.pdf,6123874,24,3120,130.0,texte_partiel,,Bon-Encontre,47032,6530,3500 a 9999
+https://www.ville-bon-encontre.fr/wp-content/uploads/2026/07/07-1er-JUILLET-2026.pdf,88141,3,3328,1109.3,texte_exploitable,,Bon-Encontre,47032,6530,3500 a 9999
+https://www.apt.fr/wp-content/uploads/2026/02/calendrier-2026.pdf,197060,1,864,864.0,texte_exploitable,,Apt,84003,10143,10000 a 49999
+https://www.apt.fr/wp-content/uploads/2025/08/Reglement-interieur_2022-et-actualisation.pdf,1315410,15,34901,2326.7,texte_exploitable,,Apt,84003,10143,10000 a 49999
+https://www.apt.fr/wp-content/uploads/2025/08/Composition-commissions-permanentes.pdf,1198283,5,660,132.0,texte_partiel,,Apt,84003,10143,10000 a 49999
+https://ville-apatou.fr/wp-content/uploads/058-CAPT-2026-Cession-de-vehicules-communaux.pdf,1286316,3,312,104.0,texte_partiel,,Apatou,97360,10306,10000 a 49999
+https://ville-apatou.fr/wp-content/uploads/056-CAPT-2026-Creation-de-deux-emplois-permanents-de-Technicien-territorial-Categorie-B.pdf,893621,3,312,104.0,texte_partiel,,Apatou,97360,10306,10000 a 49999
+https://ville-apatou.fr/wp-content/uploads/053-CAPT-2026-Election-des-delegues-suppleants-du-conseil-municipal-en-vue-des-elections-senatoriales-2026_.pdf,972588,3,312,104.0,texte_partiel,,Apatou,97360,10306,10000 a 49999
+https://diffuweb.lillemetropole.fr/static/nobrowse/assemblees/deliberations/26_C_0107.PDF,0,,0,0.0,robots_interdit,,Hem,59299,18582,10000 a 49999
+https://diffuweb.lillemetropole.fr/static/nobrowse/assemblees/deliberations/26_C_0106.PDF,0,,0,0.0,robots_interdit,,Hem,59299,18582,10000 a 49999
+https://diffuweb.lillemetropole.fr/static/nobrowse/assemblees/deliberations/26_C_0105.PDF,0,,0,0.0,robots_interdit,,Hem,59299,18582,10000 a 49999
+https://www.stjust-strambert.fr/wp-content/uploads/2026/06/26-1078-DGS-Gratuite-de-la-piscine-communautaire-Le-Petit-Bois-Saint-Just-Saint-Rambert.pdf,628961,1,0,0.0,scan_sans_texte,,Saint-Just-Saint-Rambert,42279,15764,10000 a 49999
+https://www.stjust-strambert.fr/wp-content/uploads/2026/05/26-552-DGS-Designation-representants-dassociations-locales-de-la-commission-consultative-des-services-publics-locaux-CCSPL.pdf,653917,1,0,0.0,scan_sans_texte,,Saint-Just-Saint-Rambert,42279,15764,10000 a 49999
+https://www.stjust-strambert.fr/wp-content/uploads/2026/05/26-513-DGS-Designation-des-membres-du-Conseil-local-de-securite-et-de-prevention-de-la-delinquance.pdf,824731,2,0,0.0,scan_sans_texte,,Saint-Just-Saint-Rambert,42279,15764,10000 a 49999
+https://corbas.fr/wp-content/uploads/2026/05/Liste_Deliberations_Seance_07_05_2026.pdf,83255,2,2173,1086.5,texte_exploitable,,Corbas,69273,11315,10000 a 49999
+https://www.mairie-francheville69.fr/wp-content/uploads/2026/06/Deliberations_CA_22-juin-2026.pdf,1211502,18,0,0.0,scan_sans_texte,,Francheville,69089,15604,10000 a 49999
+https://www.mairie-francheville69.fr/wp-content/uploads/2026/04/Liste_deliberations_CA_21-avril-2026.pdf,6196424,27,0,0.0,scan_sans_texte,,Francheville,69089,15604,10000 a 49999
+https://www.mairie-francheville69.fr/wp-content/uploads/2026/03/Deliberations_CA_10-mars-2026.pdf,7462926,21,0,0.0,scan_sans_texte,,Francheville,69089,15604,10000 a 49999
+https://ville-septemes.fr/wp-content/uploads/2026/02/Decision-01-2026-PC-DPU-35-route-dApt.pdf,654164,2,0,0.0,scan_sans_texte,,Septèmes-les-Vallons,13106,11995,10000 a 49999
+https://ville-septemes.fr/wp-content/uploads/2026/02/Decision-02-2026-DAG-Designation-Maitre-Touitou-audiencement-Khatchadourian.pdf,523487,1,0,0.0,scan_sans_texte,,Septèmes-les-Vallons,13106,11995,10000 a 49999
+https://ville-septemes.fr/wp-content/uploads/2026/02/Decision-03-2026-PC-demande-subvention-DSIL-2026.pdf,467298,1,0,0.0,scan_sans_texte,,Septèmes-les-Vallons,13106,11995,10000 a 49999
+https://lillers.fr/wp-content/uploads/2026/06/Conseil-Municipal-1.pdf,6770433,68,0,0.0,scan_sans_texte,,Lillers,62516,10193,10000 a 49999
+https://lillers.fr/wp-content/uploads/2026/08/cm-du-30.06.pdf,3045817,59,1515,25.7,texte_marginal,,Lillers,62516,10193,10000 a 49999
+https://lillers.fr/wp-content/uploads/2026/06/CM-28-mai.pdf,1287248,54,5707,105.7,texte_partiel,,Lillers,62516,10193,10000 a 49999
+https://mauguio-carnon.com/wp-content/uploads/2026/03/Tarifs-communaux-2026.pdf,487247,25,53578,2143.1,texte_exploitable,,Mauguio,34154,16522,10000 a 49999
+https://mauguio-carnon.com/wp-content/uploads/2023/10/AR_JANVIER_2022.pdf,5145364,6,704,117.3,texte_partiel,,Mauguio,34154,16522,10000 a 49999
+https://mauguio-carnon.com/wp-content/uploads/2023/10/AR_FEVRIER_2022.pdf,3897467,11,3092,281.1,texte_partiel,,Mauguio,34154,16522,10000 a 49999
+https://www.issoudun.fr/wp-content/uploads/2026/07/PV-CM-26-juin-2026.pdf,9368672,20,0,0.0,scan_sans_texte,,Issoudun,36088,11159,10000 a 49999
+https://www.issoudun.fr/wp-content/uploads/2026/07/38-Creation-comites-de-quartier.pdf,1112574,2,220,110.0,texte_partiel,,Issoudun,36088,11159,10000 a 49999
+https://www.issoudun.fr/wp-content/uploads/2026/07/41-Adhesion-groupement-commandes.pdf,963169,2,220,110.0,texte_partiel,,Issoudun,36088,11159,10000 a 49999
+https://www.dinan.fr/wp-content/uploads/2026/09/Pj-tarifs-juillet-tampon.pdf,855206,26,37396,1438.3,texte_exploitable,,Dinan,22050,14764,10000 a 49999
+https://www.dinan.fr/wp-content/uploads/2026/09/Decision-n°-2026-14-Maj-des-tarifs-municipaux-1-tampon.pdf,0,,0,0.0,telechargement_echoue,UnicodeEncodeError: 'ascii' codec can't encode character '\xb0' in position 42: ordinal not in range(128),Dinan,22050,14764,10000 a 49999
+https://www.dinan.fr/wp-content/uploads/2026/08/PV-CM-31-MARS-2026.pdf,639748,21,37976,1808.4,texte_exploitable,,Dinan,22050,14764,10000 a 49999
+https://www.nancy.fr/fileadmin/NAN/vie-municipale/conseil-municipal/PDF/reglement-interieur-conseil-municipal.pdf,196159,20,29603,1480.2,texte_exploitable,,Nancy,54395,103671,50000 et plus
+https://www.nancy.fr/fileadmin/NAN/footer/politique-de-confidentialite-vdn.pdf,178145,6,12547,2091.2,texte_exploitable,,Nancy,54395,103671,50000 et plus
+https://rouen.fr/sites/default/files/download/2020/bs_le_maire_de_rouen.pdf,0,,0,0.0,telechargement_echoue,HTTPError: HTTP Error 404: Not Found,Rouen,76540,117662,50000 et plus
+https://vaulx-en-velin.net/wp-content/uploads/2026/07/1-gratuite-progressive-pour-la-restauration-scolaire.pdf,5170267,7,826,118.0,texte_partiel,,Vaulx-en-Velin,69256,53069,50000 et plus
+https://vaulx-en-velin.net/wp-content/uploads/2026/07/1-annexe-reglement-de-fonctionnement.pdf,633004,19,40861,2150.6,texte_exploitable,,Vaulx-en-Velin,69256,53069,50000 et plus
+https://vaulx-en-velin.net/wp-content/uploads/2026/07/2-activ-ete-2026.pdf,2755118,4,472,118.0,texte_partiel,,Vaulx-en-Velin,69256,53069,50000 et plus
+https://www.ville-frejus.fr/wp-content/uploads/2024/12/Rapport-activites-2023-4dec.pdf,3442198,76,130364,1715.3,texte_exploitable,,Fréjus,83061,59719,50000 et plus
+https://www.ville-frejus.fr/wp-content/uploads/2026/07/SK-SECGEN26070213280.pdf,400380,4,0,0.0,scan_sans_texte,,Fréjus,83061,59719,50000 et plus
+https://www.ville-frejus.fr/wp-content/uploads/2026/06/SK-SECGEN26061910360.pdf,114412,2,0,0.0,scan_sans_texte,,Fréjus,83061,59719,50000 et plus
