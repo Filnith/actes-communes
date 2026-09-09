@@ -1,5 +1,5 @@
 {
- "demarre_le": "2026-09-09T19:39:12+00:00",
+ "demarre_le": "2026-09-09T20:02:32+00:00",
  "seuils_caracteres_par_page": {
   "marginal": 100,
   "partiel": 400
@@ -20,5 +20,5 @@
   }
  ],
  "echec": null,
- "fini_le": "2026-09-09T19:43:20+00:00"
+ "fini_le": "2026-09-09T20:06:59+00:00"
 }
