@@ -1,0 +1,52 @@
+{
+ "demarre_le": "2026-09-09T20:23:38+00:00",
+ "parametres": {
+  "pop_min": 3500,
+  "communes": 60,
+  "profondeur": 3,
+  "pages_max": 6,
+  "graine": 20260909
+ },
+ "etapes": [
+  {
+   "etape": "communes_cibles",
+   "nombre": 3290,
+   "seuil": 3500
+  },
+  {
+   "etape": "archive_telechargee",
+   "octets": 365213619
+  },
+  {
+   "etape": "communes_tirees",
+   "nombre": 60
+  },
+  {
+   "etape": "documents_trouves",
+   "nombre": 1188,
+   "communes_pourvues": 21,
+   "motifs_d_echec": {
+    "rien_trouve": 29,
+    "HTTP 429": 1,
+    "robots_interdit": 6,
+    "pas_de_site": 1,
+    "URLError: <urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1010)>": 1,
+    "URLError: <urlopen error timed out>": 1
+   }
+  },
+  {
+   "etape": "accord_des_indices",
+   "les_deux": 814,
+   "nom_seul": 144,
+   "texte_seul": 230,
+   "total": 1188
+  },
+  {
+   "etape": "profondeur_des_trouvailles",
+   "niveau_1": 1120,
+   "niveau_2": 68
+  }
+ ],
+ "echec": null,
+ "fini_le": "2026-09-09T20:42:43+00:00"
+}

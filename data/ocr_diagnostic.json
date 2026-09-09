@@ -1,0 +1,45 @@
+{
+ "demarre_le": "2026-09-09T20:42:43+00:00",
+ "seuils": {
+  "bonne": {
+   "confiance": 80.0,
+   "lexique": 0.85,
+   "marqueurs": 4
+  },
+  "moyenne": {
+   "confiance": 65.0,
+   "lexique": 0.7,
+   "marqueurs": 2
+  },
+  "dpi": 300,
+  "pages_par_document": 4
+ },
+ "etapes": [
+  {
+   "etape": "outils",
+   "tous": "presents"
+  },
+  {
+   "etape": "lexique",
+   "source": "/usr/share/dict/french",
+   "mots": 472456
+  },
+  {
+   "etape": "documents_disponibles",
+   "nombre": 1188
+  },
+  {
+   "etape": "documents_retenus",
+   "nombre": 21,
+   "communes": 21
+  },
+  {
+   "etape": "fiches",
+   "nombre": 21,
+   "ocr": 10,
+   "temoins": 10
+  }
+ ],
+ "echec": null,
+ "fini_le": "2026-09-09T20:45:58+00:00"
+}
