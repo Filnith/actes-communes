@@ -31,7 +31,7 @@ from collections import Counter
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from echantillon import (get, ExtracteurLiens, robots_autorise,
+from echantillon import (get, ExtracteurLiens, robots_autorise, sans_accents,
                          UA, DATA, RACINE, DELAI)
 
 MAX_PDF = int(os.environ.get("CONSTAT_MAX_PDF", "80"))
@@ -44,6 +44,24 @@ MAX_OCTETS = 25 * 1024 * 1024
 # trouvent les PDF ou seul un en-tete est du texte.
 SEUIL_MARGINAL = 100
 SEUIL_PARTIEL = 400
+
+# Toutes les pieces trouvees sur une page "actes" ne sont pas des
+# deliberations : on y croise des affiches, des avis, des bulletins
+# municipaux. Or c'est le taux de texte DES DELIBERATIONS qui decide du
+# projet. On classe donc les documents, et on publie les deux chiffres.
+MOTS_DELIB = ("deliberation", "delib", "proces-verbal", "proces_verbal",
+              "pv-", "pv_", "-pv", "compte-rendu", "compte_rendu", "cr-",
+              "conseil-municipal", "conseil_municipal", "cm-", "-cm",
+              "conseilmunicipal")
+
+
+def est_deliberation(url):
+    nom = sans_accents(url.rsplit("/", 1)[-1])
+    return any(m in nom for m in MOTS_DELIB)
+
+
+MESUREES = ("scan_sans_texte", "texte_marginal",
+            "texte_partiel", "texte_exploitable")
 
 DIAG = {
     "demarre_le": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -173,7 +191,8 @@ def travail():
                 break
             f = analyser(u)
             f.update(commune=r["nom"], code_insee=r["code_insee"],
-                     population=r["population"], tranche=r.get("tranche"))
+                     population=r["population"], tranche=r.get("tranche"),
+                     probable_deliberation=est_deliberation(u))
             fiches.append(f)
             vus += 1
             print(f"     [{vus:>3}/{MAX_PDF}] {r['nom'][:22]:<22} "
@@ -192,44 +211,97 @@ def travail():
     ecrire_resultats(fiches)
 
 
-def ecrire_resultats(fiches):
-    L, a = [], None
-    L.append("# Les actes publies sont-ils exploitables ?\n")
-    L.append(f"Genere le {datetime.now(timezone.utc).isoformat(timespec='seconds')} "
-             f"(UTC). Source : `data/pdf_sonde.csv`, une ligne par PDF, "
-             f"avec son URL exacte.\n")
-    L.append("\n## Methode et seuils\n")
-    L.append("On mesure les caracteres de texte reellement extractibles par "
-             "page (`pdftotext`). Une page de deliberation dactylographiee en "
-             "contient couramment plus de 1500 ; une page scannee sans couche "
-             "texte en rend zero.\n")
-    L.append(f"\n- `scan_sans_texte` : 0 caractere par page — inexploitable sans OCR\n"
-             f"- `texte_marginal` : moins de {SEUIL_MARGINAL} — sans doute un "
-             f"scan avec un en-tete texte\n"
-             f"- `texte_partiel` : de {SEUIL_MARGINAL} a {SEUIL_PARTIEL}\n"
-             f"- `texte_exploitable` : plus de {SEUIL_PARTIEL}\n")
-    n = len(fiches)
-    c = Counter(f["classe"] for f in fiches)
-    L.append("\n## Resultat\n")
+def _tableau(L, lot, titre):
+    """Un tableau de classement sur un lot de PDF reellement mesures."""
+    n = len(lot)
+    L.append(f"\n### {titre} — {n} documents\n")
+    if not n:
+        L.append("Aucun document dans ce lot.\n")
+        return
+    c = Counter(f["classe"] for f in lot)
     L.append("| Classe | Nombre | Part |")
     L.append("|---|---:|---:|")
-    for k, v in c.most_common():
-        L.append(f"| `{k}` | {v} | {100*v/n:.0f} % |")
-    bons = c["texte_exploitable"] + c["texte_partiel"]
-    L.append(f"\n**{bons} PDF sur {n} ({100*bons/n:.0f} %) portent une couche "
-             f"texte utilisable sans OCR.**\n")
-    lisibles = [f for f in fiches if f["pages"]]
+    for k in MESUREES:
+        if c[k]:
+            L.append(f"| `{k}` | {c[k]} | {100*c[k]/n:.0f} % |")
+    strict = c["texte_exploitable"]
+    large = strict + c["texte_partiel"]
+    ocr = c["scan_sans_texte"] + c["texte_marginal"]
+    L.append(f"\n- Couche texte franche (plus de {SEUIL_PARTIEL} car./page) : "
+             f"**{strict} sur {n}, soit {100*strict/n:.0f} %**")
+    L.append(f"- Texte au moins partiel (plus de {SEUIL_MARGINAL} car./page) : "
+             f"**{large} sur {n}, soit {100*large/n:.0f} %**")
+    L.append(f"- A passer en OCR : **{ocr} sur {n}, soit {100*ocr/n:.0f} %**\n")
+
+
+def ecrire_resultats(fiches):
+    L = []
+    L.append("# Les actes publies sont-ils exploitables ?\n")
+    L.append(f"Genere le {datetime.now(timezone.utc).isoformat(timespec='seconds')} "
+             f"(UTC). Source : `data/pdf_sonde.csv`, une ligne par PDF, avec son "
+             f"URL exacte.\n")
+
+    L.append("\n## Methode et seuils\n")
+    L.append("On mesure les caracteres de texte reellement extractibles par page "
+             "(`pdftotext`). Une page de deliberation dactylographiee en contient "
+             "couramment plus de 1500 ; une page scannee sans couche texte en "
+             "rend zero.\n")
+    L.append(f"\n- `scan_sans_texte` : 0 caractere par page — inexploitable sans OCR\n"
+             f"- `texte_marginal` : moins de {SEUIL_MARGINAL} — sans doute un scan "
+             f"avec un en-tete texte\n"
+             f"- `texte_partiel` : de {SEUIL_MARGINAL} a {SEUIL_PARTIEL}\n"
+             f"- `texte_exploitable` : plus de {SEUIL_PARTIEL}\n")
+
+    mesures = [f for f in fiches if f["classe"] in MESUREES]
+    ecartes = [f for f in fiches if f["classe"] not in MESUREES]
+
+    L.append("\n## Denominateur\n")
+    L.append(f"{len(fiches)} documents ont ete tentes, **{len(mesures)} ont pu "
+             f"etre reellement mesures**. Tous les taux ci-dessous portent sur "
+             f"ces {len(mesures)}-la.\n")
+    if ecartes:
+        L.append("\nLes autres n'ont pas ete mesures, et les compter comme "
+                 "depourvus de texte fausserait le resultat :\n")
+        L.append("\n| Motif d'ecart | Nombre |")
+        L.append("|---|---:|")
+        for k, v in Counter(f["classe"] for f in ecartes).most_common():
+            L.append(f"| `{k}` | {v} |")
+        L.append("")
+
+    L.append("\n## Resultat\n")
+    _tableau(L, mesures, "Tous documents trouves sur les pages d'actes")
+    delibs = [f for f in mesures if f.get("probable_deliberation")]
+    autres = [f for f in mesures if not f.get("probable_deliberation")]
+    _tableau(L, delibs, "Documents dont le nom indique une deliberation ou un PV")
+    _tableau(L, autres, "Autres pieces (affiches, avis, bulletins)")
+    L.append("Le chiffre qui compte est celui du deuxieme tableau. Le premier "
+             "melange des deliberations et des affiches communales, qui n'ont "
+             "aucune raison d'avoir le meme taux de numerisation.\n")
+
+    lisibles = [f for f in mesures if f["pages"]]
     if lisibles:
         pages = sorted(f["pages"] for f in lisibles)
-        L.append(f"\nPages par document : mediane {pages[len(pages)//2]}, "
-                 f"de {pages[0]} a {pages[-1]}. "
-                 f"Poids median : {sorted(f['octets'] for f in lisibles)[len(lisibles)//2]//1024} Ko.\n")
+        poids = sorted(f["octets"] for f in lisibles)
+        scans = [f for f in mesures if f["classe"] == "scan_sans_texte" and f["pages"]]
+        L.append(f"\n## Charge de calcul si OCR\n")
+        L.append(f"Pages par document : mediane {pages[len(pages)//2]}, "
+                 f"de {pages[0]} a {pages[-1]}. Poids median "
+                 f"{poids[len(poids)//2]//1024} Ko.\n")
+        if scans:
+            L.append(f"\nDans cet echantillon, les {len(scans)} documents a OCRiser "
+                     f"totalisent {sum(f['pages'] for f in scans)} pages, avec une "
+                     f"mediane de {sorted(f['pages'] for f in scans)[len(scans)//2]} "
+                     f"pages par document. Des documents courts : l'OCR y est une "
+                     f"depense modeste, pas un mur.\n")
+
     L.append("\n## Lecture\n")
-    L.append("Ce chiffre decide de la suite. Au-dessus des deux tiers, le corpus "
-             "est de la donnee et peut etre indexe directement. En dessous d'un "
-             "tiers, c'est un corpus d'images : il faudrait une chaine OCR, ce "
-             "qui change la nature et le cout du projet, et cela devrait etre "
-             "dit sans arrondir.\n")
+    L.append("Ce chiffre decide de la suite. Au-dessus des deux tiers de texte, "
+             "le corpus est de la donnee et s'indexe directement. En dessous d'un "
+             "tiers, c'est un corpus d'images et il faut une chaine OCR, ce qui "
+             "change la nature comme le cout du projet. Entre les deux, il faut "
+             "trancher document par document — et le dire, plutot que d'arrondir "
+             "vers le resultat qui arrange.\n")
+
     with open(os.path.join(RACINE, "RESULTATS_PDF.md"), "w", encoding="utf-8") as fh:
         fh.write("\n".join(L) + "\n")
 
