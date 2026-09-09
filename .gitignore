@@ -2,3 +2,8 @@
 __pycache__/
 *.pyc
 .venv/
+
+# Jamais versionne : identifiants
+.jeton
+.jeton.*
+*.token

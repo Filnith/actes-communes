@@ -2,6 +2,10 @@ name: Echantillon — publication des actes communaux
 
 # Ce robot tourne chez GitHub, pas sur la machine de qui que ce soit.
 # C'est voulu : le projet doit continuer sans qu'aucun de nous deux soit là.
+#
+# Le diagnostic est publié dans le dépôt MÊME EN CAS D'ÉCHEC. Celui qui écrit
+# ce code ne peut pas lire les journaux d'exécution de GitHub : le dépôt est
+# son seul canal de retour. Un échec muet serait un échec deux fois.
 
 on:
   workflow_dispatch:
@@ -28,17 +32,30 @@ jobs:
           python-version: "3.12"
 
       - name: Échantillonner
+        id: mesure
+        continue-on-error: true
         env:
           CONSTAT_PAR_TRANCHE: ${{ inputs.par_tranche }}
           CONSTAT_SEED: ${{ inputs.graine }}
           CONSTAT_CONTACT: https://github.com/${{ github.repository }}
         run: python3 src/echantillon.py
 
-      - name: Publier les résultats dans le dépôt
+      - name: Publier les résultats et le diagnostic
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A data RESULTATS.md
-          git diff --staged --quiet && echo "Aucun changement." && exit 0
-          git commit -m "Mesure du $(date -u +%Y-%m-%d)"
-          git push
+          git add -A data RESULTATS.md 2>/dev/null || git add -A data
+          if git diff --staged --quiet; then
+            echo "Rien à publier."
+          else
+            git commit -m "Exécution du $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi
+
+      - name: Refléter l'échec de la mesure
+        if: steps.mesure.outcome == 'failure'
+        run: |
+          echo "La mesure a échoué. Le diagnostic est publié dans data/diagnostic.json"
+          exit 1
