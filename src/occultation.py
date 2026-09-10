@@ -1,5 +1,38 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# =========================================================================
+#  NE PAS BRANCHER DANS LA CHAINE. MODULE INAPTE, ET PAS SEULEMENT BUGUE.
+#
+#  Revue adverse du 2026-09-10 : 17 defauts, tous verifies par execution.
+#  Le pire, et il suffit a condamner l'approche : la regle qui exige une
+#  personne physique se declenche sur "M. le Maire". Or toute deliberation
+#  francaise commence par "Monsieur le Maire indique que...". Le module
+#  occulte donc la parcelle, le permis de construire, le siege de
+#  l'entreprise attributaire et jusqu'a l'adresse de la mairie — c'est-a-dire
+#  tout le corpus. Les 40 epreuves passaient parce qu'elles etaient ecrites
+#  sans sujet parlant ; un vrai proces-verbal en a toujours un.
+#
+#  Deux autres conclusions de fond :
+#   - Premisse juridique fausse : "petitionnaire", "demandeur",
+#     "beneficiaire" designent le plus souvent une personne MORALE (SCI,
+#     SARL, association), et "domicilie" est le terme consacre du siege
+#     social. Le raisonnement de depart etait errone, pas seulement
+#     l'implementation.
+#   - Les listes d'emargement au format "NOM Prenom + adresse", qui sont la
+#     forme la plus courante des fuites reelles, ne declenchent aucune regle.
+#
+#  Ce n'est pas une liste de correctifs a appliquer : c'est une erreur de
+#  categorie. "Cette adresse est-elle rattachee a une personne physique"
+#  n'est pas une question d'expression reguliere. Elle demande de la
+#  reconnaissance d'entites nommees.
+#
+#  Ce qui reste valable : les identifiants structures (IBAN, NIR,
+#  telephone, courriel) SONT des problemes d'expression reguliere — mais
+#  les quatre implementations ci-dessous ont chacune des defauts averes.
+#
+#  Conserve comme piece a conviction et comme base d'epreuves. Voir
+#  claude/occultation-revue.md.
+# =========================================================================
 """
 occultation.py — retirer les identifiants personnels avant toute publication.
 
