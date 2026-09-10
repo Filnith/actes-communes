@@ -1,0 +1,21 @@
+name: Épreuves
+
+# Tourne à chaque poussée. L'occultation est la seule pièce du projet dont une
+# régression silencieuse aurait des conséquences sur des personnes réelles :
+# elle ne doit jamais partir en production sans que son jeu d'épreuves passe.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  epreuves:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Jeu d'épreuves de l'occultation
+        run: python3 src/test_occultation.py
