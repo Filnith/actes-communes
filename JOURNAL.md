@@ -80,6 +80,9 @@ le seuil de 3 500 habitants est ce qui structure l'échantillon.
 
 ## Ce qui est déjà occupé, et ce qui ne l'est pas
 
+> **Corrigé le 2026-09-11 : le paragraphe sur le texte des décisions est
+> faux.** Voir la dernière section de ce journal.
+
 Les couches adjacentes sont prises et commercialement actives : **PLUFR,
 API URBA, PLU Analyzer, CityCode** sur les données d'urbanisme et de zonage, et
 le Géoportail de l'urbanisme côté public.
@@ -124,3 +127,57 @@ canal de retour, et un échec muet serait un échec deux fois.
 
 **Le robot ne tourne pas là où vit son auteur.** Il tourne sur GitHub Actions,
 sur planification, pour que le projet continue sans que personne soit présent.
+
+---
+
+## 2026-09-11 — Correction : le texte des décisions est déjà agrégé, et vendu
+
+Ce qui est écrit plus haut sous « Ce qui est déjà occupé » est **faux**. La
+vérification d'occupation du 9 septembre a porté sur les couches voisines
+(urbanisme), pas sur le produit lui-même. Trois recherches formulées comme un
+acheteur les formulerait — « veille délibérations conseils municipaux » — ont
+suffi à la démentir.
+
+| Acteur | Ce qu'il déclare (lu le 2026-09-11) |
+|---|---|
+| **Explore** | « 100% des EPCI (Métropoles, Communautés d'agglomération,…) et toutes les communes ayant un site web » ; comptes rendus analysés « en temps réel » ; « Plus de 1500 clients » ; « Depuis plus de 25 ans » |
+| **Explain** (ex-Liegey Muller Pons) | « 12M€ levés au total depuis 2020 » ; « 30 collaborateurs » ; « +50M documents analysés par notre IA ». D'après un article tiers (jooc.ai) : « délibérations de conseils municipaux, budgets votés, avis d'attribution, comptes-rendus », pour l'énergie, l'eau, le BTP, les télécoms |
+| **Delibia** | « 4 millions+ Décisions publiques issues de 6 500+ collectivités » ; « Plus de 3 800 collectivités territoriales utilisent Delibia » ; « 1 licence offerte à toutes les secrétaires de mairie de France » |
+| **Délib** | « Nous récupérons les délibérations et compte-rendus des Conseils municipaux, communautaires, départementaux » |
+
+Sources : <https://www.explore.fr/solutions/veille-territoriale/deliberation-des-collectivites/>,
+<https://www.explore.fr/nos-engagements-devenir-client/questions-reponses/>,
+<https://explain.fr/a-propos>, <https://www.jooc.ai/blog/explain>,
+<https://delibia.fr/>, <https://delib.pro/>.
+
+**Ce que ça tranche.** La question laissée ouverte plus haut — « Qui paiera » —
+a sa réponse : les acheteurs que nous visions paient déjà, et pas nous.
+L'énergie, l'eau et le BTP sont chez Explain et Explore ; les collectivités
+chez Delibia. L'index « commune → page d'actes », que je tenais pour le seul
+actif non copiable du projet, existe chez Explore. Notre collecteur en trouve
+21 sur 60.
+
+**Décision : le projet est suspendu comme projet économique.** Pas de
+réparation du collecteur, pas de nouvelle occultation. La planification
+hebdomadaire du robot est arrêtée ; les workflows restent lançables à la main.
+
+**Ce qui reste vrai.** Aucun de ces services n'est ouvert gratuitement au
+public : Delibia est réservé aux collectivités, Explore et Explain vendent aux
+entreprises. Une archive publique et gratuite n'existe pas en France à notre
+connaissance ; elle existe en Belgique (<https://www.deliberations.be/>, conçu
+par l'intercommunale iMio). Mais personne ne la paierait, et elle exige une
+relecture juridique avant toute mise en ligne. Elle est mise en réserve. Les
+mesures de ce dépôt restent valables.
+
+**Ce qui n'a pas été vérifié.** Les chiffres ci-dessus sont les déclarations
+commerciales des acteurs eux-mêmes, lues via un outil de résumé. Leur
+couverture réelle — notamment des PDF scannés, 62 % de notre échantillon —
+n'est pas mesurée, et leurs prix ne sont pas publics. Aucun de ces points ne
+change la conclusion : même surévalués, ces acteurs sont financés, en place, et
+vendent à nos acheteurs.
+
+**L'erreur, pour qu'elle ne se reproduise pas.** J'avais cherché qui construit
+des choses voisines, pas à qui les acheteurs paient déjà ce produit. La règle
+« vérifier l'occupation avant de s'attacher » a été appliquée au mauvais
+périmètre. Et ce projet avait été choisi le jour même où le précédent était
+abandonné.

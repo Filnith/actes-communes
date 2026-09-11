@@ -1,10 +1,17 @@
 # Les actes des communes françaises
 
+> **Statut au 2026-09-11 : suspendu.** Contrairement à ce qu'affirmait ce
+> dépôt, le texte des décisions communales est déjà agrégé à l'échelle
+> nationale — par des services commerciaux (Explore, Explain, Delibia, Délib)
+> réservés aux entreprises et aux collectivités. Détails et sources dans
+> [JOURNAL.md](JOURNAL.md). Les mesures publiées ici restent valables.
+
 Rendre lisible et cherchable ce que décident réellement les conseils municipaux
 français. Ces documents — délibérations, procès-verbaux, actes administratifs —
 décident du sol, de l'eau, de l'argent, des écoles et du bâti. Ils sont publics
 par obligation légale. Ils sont illisibles en pratique : déposés en PDF sur
-36 000 sites que personne n'ouvre, sans aucune agrégation nationale.
+36 000 sites que personne n'ouvre, sans agrégation publique et gratuite
+à l'échelle nationale (à notre connaissance).
 
 Ce n'est pas de l'information cachée, ce qui serait un problème politique.
 C'est de l'information disponible et inutilisable, ce qui est un problème

@@ -13,8 +13,10 @@ on:
   # pourriture silencieuse : une source qui déménage, une API qui change, un
   # format qui dérive. Un pipeline qui rouille sans prévenir est la panne la
   # plus coûteuse, parce qu'on la découvre trop tard.
-  schedule:
-    - cron: "17 4 * * 1"
+  # Planification arrêtée le 2026-09-11 : projet suspendu (voir JOURNAL.md).
+  # Inutile de solliciter les sites des communes chaque semaine.
+  # schedule:
+  #   - cron: "17 4 * * 1"
 
   workflow_dispatch:
     inputs:
